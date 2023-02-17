@@ -8,6 +8,18 @@ return num;
 }
 }
 
+/* aternative solution
+
+function makeNegative(num) {
+  if ( num > 0 ) {
+        return -num;
+    }
+    else {
+        return num;
+    }
+}
+*/
+
 //https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
 
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
@@ -51,4 +63,10 @@ function lovefunc(flower1, flower2){
    }
 }
 
+/* alternative solution
 
+function lovefunc(flower1, flower2) {
+  return flower1 % 2 !== flower2 % 2;
+}
+
+*/
