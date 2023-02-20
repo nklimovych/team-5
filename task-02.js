@@ -1,4 +1,4 @@
-//https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
+// https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 
 function stringToArray(string) {
   return string.split(" ");
@@ -13,7 +13,7 @@ function stringToArray(string) {
 */
 
 
-//https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
+// https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
 function DNAtoRNA(dna) {
   return dna.replaceAll("T", "U");
@@ -26,15 +26,11 @@ function DNAtoRNA(dna) {
 */
 
 
-//https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
+// https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
-var min = function (list) {
-  return Math.min(...list);
-};
+const min = (list) => Math.min(...list);
 
-var max = function (list) {
-  return Math.max(...list);
-};
+const max = (list) => Math.max(...list);
 
 /*
 Обидва методи - 'min' та 'max' - дозволяють знайти найменше та найбільше значення в масиві 'list'.
@@ -51,28 +47,19 @@ var max = function (list) {
 */
 
 
-//https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+// https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 
-function min(arr, toReturn) {
-  let minValue = Math.min(...arr);
-  return toReturn === "value" ? minValue : arr.indexOf(minValue);
-}
-
-/*  Alternative solution withot variable: 
 function min(arr, toReturn) {
   return toReturn === "value" ? Math.min(...arr) : arr.indexOf(Math.min(...arr));
 }
 
-*/
 
 /*
 Цей метод приймає масив arr та рядок toReturn, який вказує, що повернути: мінімальне значення 
 з масиву чи його індекс.
 
-На першому кроці використовується метод Math.min() для знаходження мінімального значення 
-в масиві arr. 
-
-Для передачі значень масиву arr до методу Math.min(), ми використовуємо оператор
+У методі використовується метод Math.min() для знаходження мінімального значення 
+в масиві arr. Для передачі значень масиву arr до методу Math.min(), ми використовуємо оператор
 spread (...), який розгортає елементи масиву в окремі аргументи.
 
 Після того, як мінімальне значення було знайдено, функція перевіряє значення параметру toReturn.
@@ -109,7 +96,7 @@ function warnTheSheep(queue) {
 // https://www.codewars.com/kata/beginner-lost-without-a-map
 
 function maps(x) {
-  return x.map((x) => x * 2);
+  return x.map(x => x * 2);
 }
 
 /*
@@ -122,7 +109,7 @@ function maps(x) {
 // https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
 
 function firstNonConsecutive(arr) {
-  let result = arr.find((value, index) => index > 0 && value !== arr[index - 1] + 1);
+  const result = arr.find((value, index) => index > 0 && value !== arr[index - 1] + 1);
   return Number.isInteger(result) ? result : null;
 }
 
