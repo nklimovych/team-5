@@ -75,7 +75,7 @@ toReturn дорівнює "index" (тобто ми хочемо повернут
 function warnTheSheep(queue) {
   const index = queue.length - 1 - queue.indexOf("wolf");
   return index
-    ? `Oi! Sheep number ${index}! You are about to be eaten by a wolf!`
+    ? "Oi! Sheep number ${index}! You are about to be eaten by a wolf!"
     : "Pls go away and stop eating my sheep";
 }
 
